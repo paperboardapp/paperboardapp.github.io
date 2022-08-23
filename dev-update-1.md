@@ -2,8 +2,8 @@
 
 _2022/08/23_
 
-Since this is our first development update and we never properly introduced the project
-before we want to give some background on the history of the project before diving into
+Since this is our first development update, and we never properly introduced the project
+before, we want to give some background on the history of the project before diving into
 the current development efforts in our next update.
 
 ## Why Paperboard
