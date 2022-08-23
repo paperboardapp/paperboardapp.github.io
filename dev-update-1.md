@@ -1,7 +1,7 @@
 ---
-title: "Paperboard Development Update 1"
+title: Paperboard Development Update 1
 date: 2022-08-23T13:31:23+02:00
-draft: true
+layout: default
 ---
 
 # Paperboard Development Update 1
