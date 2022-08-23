@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>dev-update-1</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: 1;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="paperboard-development-update-1">Paperboard Development Update
+1</h1>
+<p><em>2022/08/23</em></p>
+<p>Since this is our first development update and we never properly
+introduced the project before we want to give some background on the
+history of the project before diving into the current development
+efforts in our next update.</p>
+<h2 id="why-paperboard">Why Paperboard</h2>
+<p>Like many projects Paperboard started as an experiment in applying a
+unique set of design decisions, both on a technical as well as on a user
+experience level, to a certain problem domain, in this case a virtual
+board.</p>
+<p>But beyond being an interesting experiment there was one particular
+reason that we started to build Paperboard. And that was our frustration
+in using existing virtual boards to track our product development
+tasks.</p>
+<p>There are many other boards out there and most of them make it easy
+enough to add content fast. But managing and reorganizing these elements
+quickly turns into an exercise in frustration. We were not satisfied
+with these existing solutions so we started to experiment.</p>
+<p>To that end the prime directive of Paperboard is making it effortless
+to organize and reorganize the elements on the virtual board.</p>
+<h2 id="paperboard-ux">Paperboard UX</h2>
+<p>One of the original ideas in the first Paperboard prototype was what
+is nowadays called “displacement” in the code. A card will push an
+element up or down when placed on top of it so elements never overlap.
+The primary goal of this functionality was to avoid the annoyance of
+having to rearrange cards manually.</p>
+<figure>
+<img src="./displacement-example.gif" alt="displacement example" />
+<figcaption aria-hidden="true">displacement example</figcaption>
+</figure>
+<p>It works well enough but has its limitations. We are still
+considering turning it into a setting. There are a number of ways it
+could be improved though but this could be the topic of another
+development update.</p>
+<h3 id="the-grid">The Grid</h3>
+<p>Since the basic card displacement does not really cut it if you want
+to represent something like a story map the next idea was the grid. In
+its first incarnation the grid was an element that had to be created
+separately but later we changed this so it is created automatically if
+cards collide.</p>
+<figure>
+<img src="./grid-demo.gif" alt="grid demo" />
+<figcaption aria-hidden="true">grid demo</figcaption>
+</figure>
+<p>It seems neat but we never added enough functionality for it to
+actually be usable as a story map and ultimately we removed the
+functionality entirely in a recent change in favor of the table.</p>
+<h3 id="the-table">The Table</h3>
+<p>The idea of a table element came very early in the Paperboard project
+but we had many doubts about the feasibility of the UX we were aiming
+for. The concept is pretty straightforward, a table can have any number
+of rows and columns and every cell can contain any number of elements in
+arbitrary positions within the cell.</p>
+<figure>
+<img src="./table-demo.gif" alt="table demo" />
+<figcaption aria-hidden="true">table demo</figcaption>
+</figure>
+<p>It doesn’t seem that hard at first glance but there are a number of
+interesting edge cases that you need to deal with. We are still working
+on improving the table UI, to make it prettier and add some missing
+features. But the basic concept works well. We use it daily on our own
+development board and it has proven effective in managing our tasks.</p>
+<p>We think the table could in the future also gain some features of the
+grid.</p>
+<h3 id="imports-collaboration-and-more">Imports, Collaboration, and
+more</h3>
+<p>There are many more features that are already implemented in
+Paperboard, like basic data imports from Jira or Linear. Paperboard is
+also already a live board that can be collaborated on in real-time as
+you would expect from such a tool. We will be writing about these and
+many more features in more detail in future updates.</p>
+<h2 id="where-are-we-going">Where are we going?</h2>
+<p>While you can use the basic cards and elements in Paperboard to track
+your product development tasks we don’t want to build another issue
+tracking tool or build backlog items, sprints or anything like that into
+Paperboard.</p>
+<p>There are many tools out there that already do a great job with that.
+But the reality of modern software product development is that there are
+usually many such tools in use in a single company, even in a single
+team.</p>
+<p>The downside of most of these tools is their lack of visual nature.
+They are mostly built around infinite lists of items which don’t afford
+any size constraints. And human cognition is fundamentally built on the
+perception of space and the spatial relationship of objects around
+us.</p>
+<p>This is why we believe there is a lot of value in being able to bring
+all these diverse sources of information on a visual board and being
+able to organize and cross-reference them as you see fit.</p>
+<p>Just picture being able to get an overview of all your ongoing work
+in progress across the whole company. Or being able to visualize the
+dependencies between your development teams that are right now hidden
+inside tasks in infinite lists that are out-of-sight out-of-mind.</p>
+<p>Imagine being able to see all the tasks across departments related to
+a single product effort, like marketing, development, operations, etc.
+all together on the board at the level of detail you need to understand
+where you are at.</p>
+<p>This is where we think the future of Paperboard lies.</p>
+<h2 id="follow-our-development">Follow our Development</h2>
+<p>You can follow our progress on our own Paperboard board at <a
+href="https://paperboard.app/dev">paperboard.app/dev</a>.</p>
+<p>This is a readonly snapshot of our development board.</p>
+<p>You can also follow us on twitter at <a
+href="https://twitter.com/paperboardapp">twitter.com/paperboardapp</a>.</p>
+<h2 id="try-paperboard">Try Paperboard</h2>
+<p>You can try Paperboard yourself right now at <a
+href="https://paperboard.app">paperboard.app</a>.</p>
+<p>Let us know what you think.</p>
+</body>
+</html>
