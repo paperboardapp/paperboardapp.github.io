@@ -33,17 +33,17 @@ Product debt happens through business, product, marketing, design, ux, technical
 While building Paperboad we make decisions revolving around **_shipping a feature to get quick feedback_** and ensuring we can keep constantly shipping in the future. To get a better insight of the scope for a specific feature, we might build out a **_rudimentary technical implementation with minimal UX_**, just to see how this would work and what blockers one might run into.
 After rolling out the feature we start tracking what's missing from a product perspective, for example we might create a card with **"Feature A: Write user documentation"** or **"Feature A: Improve UX"**, which might contain a list of things to improve.
 
-![product_debt](../assets/product_debt.png)
+![product_debt](/assets/product_debt.png)
 
 These cards alone might disappear in the workspace, out of sight - out of mind. This is where a board can come handy, we can collect these issues and place them somewhere prominently on the board. But it doesn't have it to be a board, it can just as well be tracked in your usual product management application. This only a matter of preference.
 
 One approach when using is the board is to group these issues by topic and color, i.e. blue for UX and green for technical fixes and so forth. Being able to collect these issues helps getting a better idea of the currently occurred product debt. Obviously we use Paperboard itself to track the debt. Here is an example of how we would use this. In this case we just a regular **table element** containing topics and issues. This table exists outside of any cycle or iteration, it is always present and anyone can take an issue and work on it. The table is always visible, placed at a central position on the board.
 
-![product_debt_2](../assets/product_debt_2.png)
+![product_debt_2](/assets/product_debt_2.png)
 
 One interesting aspect that we are trying to introduce is **visualizing the dependencies between issues**. For example some issues can not be tackled due other issues needing to be finished first. In a future version, you can see which cards are blocked, which can give a more detailed picture of how much work needs to be done. Here is a demo preview of the dependencies feature:
 
-![product_debt_3](../assets/product_debt_3.png)
+![product_debt_3](/assets/product_debt_3.png)
 
 From an engineering perspective it can be frustrating not being able to make a case for refactoring, especially in environments where a _feature factory_ mindset is prevalent. When engineering has to shoulder the debt in most cases without having the ability to tackle these issues when needed, is where a **collective understanding** is more needed than not. It can help to get a collective sense of the current situation by talking about **Product Debt**, as these technical issues have an effect on the product and the user experience.
 
