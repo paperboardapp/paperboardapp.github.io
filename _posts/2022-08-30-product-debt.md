@@ -21,10 +21,10 @@ To get a **better understanding of product debt** here are some **questions** th
 
 - _What processes or tools are used to understand the value features provide?_
 - _Is there an understanding which features provide low or no value?_
-- _Are low level features removed from the product?_
+- _Are low value features removed from the product?_
 - _How is suboptimal ux identified and handled?_
 - _How are desgin inconsistencies tackled?_
-- _Is there an explicit way how ux, design or product inefficiencies are handled?_
+- _Is there an explicit way how ux, design or product inefficiencies are tracked?_
 
 These questions might help to gain a more tangible approach to identifying product debt. Both, with technical and product debt, the debt can accumulate very slowly, almost unnoticed from the day to day business.
 
@@ -35,9 +35,9 @@ After rolling out the feature we start tracking what's missing from a product pe
 
 ![product_debt](/assets/product_debt.png)
 
-These cards alone might disappear in the workspace, out of sight - out of mind. This is where a board can come handy, we can collect these issues and place them somewhere prominently on the board. But it doesn't have it to be a board, it can just as well be tracked in your usual product management application. This only a matter of preference.
+These cards alone might disappear in the workspace, out of sight - out of mind. This is where a board can come handy, we can collect these issues and place them somewhere prominently on the board. But it doesn't have it to be a board, it can just as well be tracked in your usual product management application or a sheet. This is only a matter of preference.
 
-One approach when using is the board is to group these issues by topic and color, i.e. blue for UX and green for technical fixes and so forth. Being able to collect these issues helps getting a better idea of the currently occurred product debt. Obviously we use Paperboard itself to track the debt. Here is an example of how we would use this. In this case we just a regular **table element** containing topics and issues. This table exists outside of any cycle or iteration, it is always present and anyone can take an issue and work on it. The table is always visible, placed at a central position on the board.
+One approach when using the board is to group these issues by topic and color, i.e. blue for UX and green for technical fixes and so forth. Being able to collect these issues helps getting a better idea of the currently occurred product debt. Obviously we use Paperboard itself to track the debt. The following is an example of we would use the board. In this case we just use a regular **table element** containing topics and issues. This table exists outside of any cycle or iteration, it is always present and anyone can take an issue and work on it. The table is always visible, placed at a central position on the board.
 
 ![product_debt_2](/assets/product_debt_2.png)
 
